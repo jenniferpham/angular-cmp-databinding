@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-xs-12">
+      <h1>Cockpit</h1>
+      <p>Add new Servers or blueprints!</p>
+      <label>Server Name -@Output, new EventEmitter (child gives/outputs data to parent)</label>
+      <input type="text" class="form-control" [(ngModel)]="newServerName" #serverNameInput>
+      <label>Server Content -@Output, new EventEmitter (child gives/outputs data to parent)</label>
+      <input type="text" class="form-control" [(ngModel)]="newServerContent" #serverContentInput>
+      <br>
+      <button
+        class="btn btn-primary"
+        (click)="onAddServer(serverNameInput)">Add Server</button>
+      <button
+        class="btn btn-primary"
+        (click)="onAddBlueprint(serverNameInput)">Add Server Blueprint</button>
+    </div>
+  </div>
